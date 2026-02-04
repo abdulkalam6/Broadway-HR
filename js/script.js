@@ -106,5 +106,40 @@ document.addEventListener("DOMContentLoaded", function () {
         courseSearchInput.addEventListener('input', function() {
             filterCourses(this.value);
         });
+
+        // Button filtering
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        if (filterButtons.length > 0) {
+            filterButtons.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Update active state
+                    filterButtons.forEach(b => {
+                        b.classList.remove('btn-gradient');
+                        b.classList.add('btn-outline-secondary');
+                    });
+                    this.classList.remove('btn-outline-secondary');
+                    this.classList.add('btn-gradient');
+
+                    // Filter
+                    const filterValue = this.getAttribute('data-filter');
+                    const cards = courseContainer.querySelectorAll('.col-lg-4');
+
+                    if (filterValue === 'all') {
+                        cards.forEach(card => card.style.display = 'block');
+                    } else {
+                        cards.forEach(card => {
+                            const badge = card.querySelector('.badge').textContent.toLowerCase();
+                            // Simple mapping or check
+                            if (badge.includes(filterValue.toLowerCase()) || 
+                                (filterValue === 'business' && (badge.includes('hr') || badge.includes('management')))) {
+                                card.style.display = 'block';
+                            } else {
+                                card.style.display = 'none';
+                            }
+                        });
+                    }
+                });
+            });
+        }
     }
 });
