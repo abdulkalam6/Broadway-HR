@@ -1,0 +1,720 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Broadway HR | Smart Career Training</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <i class="fas fa-graduation-cap me-2"></i>Broadway HR
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="courses.html">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item ms-lg-3">
+              <a href="courses.html" class="btn btn-gradient">Enroll Now</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section d-flex align-items-center">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6" data-aos="fade-right">
+            <span
+              class="badge bg-light text-primary mb-3 px-3 py-2 rounded-pill fw-bold"
+              >🚀 Launch Your Career</span
+            >
+            <h1 class="display-4 fw-bold mb-4">
+              Develop Your Career Skills in a
+              <span class="text-gradient">Smart Way</span>
+            </h1>
+            <p class="lead text-muted mb-5">
+              Industry-focused training programs designed to help you learn,
+              practice, and get hired faster. No boring lectures, just real
+              skills.
+            </p>
+            <div class="d-flex gap-3 flex-wrap">
+              <a href="courses.html" class="btn btn-gradient btn-lg"
+                >Explore Courses</a
+              >
+              <a href="#video" class="btn btn-outline-custom btn-lg"
+                ><i class="fas fa-play me-2"></i> Watch Intro</a
+              >
+            </div>
+
+            <div class="mt-5 d-flex gap-2">
+              <span
+                class="badge bg-white shadow-sm text-dark p-2 border floating-anim"
+                style="animation-delay: 0s"
+                >💻 Coding</span
+              >
+              <span
+                class="badge bg-white shadow-sm text-dark p-2 border floating-anim"
+                style="animation-delay: 1s"
+                >🎨 Design</span
+              >
+              <span
+                class="badge bg-white shadow-sm text-dark p-2 border floating-anim"
+                style="animation-delay: 2s"
+                >📊 Data</span
+              >
+              <span
+                class="badge bg-white shadow-sm text-dark p-2 border floating-anim"
+                style="animation-delay: 3s"
+                >🤖 AI</span
+              >
+            </div>
+          </div>
+          <div class="col-lg-6 text-center" data-aos="fade-left">
+            <!-- Placeholder for 3D Illustration -->
+            <img
+              src="https://img.freepik.com/free-vector/online-learning-concept-illustration_114360-4966.jpg?w=826&t=st=1707158000~exp=1707158600~hmac=example"
+              alt="Learning Illustration"
+              class="img-fluid floating-anim"
+              style="max-height: 500px; border-radius: 20px"
+            />
+            <!-- Note: In a real project, we'd use a local 3D SVG or a better premium asset -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="trust-bar border-top border-bottom">
+      <div class="container text-center">
+        <p class="text-muted small fw-bold text-uppercase mb-4">
+          Aligned with Industry Standards
+        </p>
+        <div
+          class="row justify-content-center align-items-center g-4 grayscale-logos"
+        >
+          <!-- Using Font Awesome icons as logo placeholders for demo -->
+          <div class="col-6 col-md-2">
+            <i class="fab fa-google fa-2x trust-logo"></i>
+          </div>
+          <div class="col-6 col-md-2">
+            <i class="fab fa-microsoft fa-2x trust-logo"></i>
+          </div>
+          <div class="col-6 col-md-2">
+            <i class="fab fa-aws fa-2x trust-logo"></i>
+          </div>
+          <div class="col-6 col-md-2">
+            <i class="fab fa-github fa-2x trust-logo"></i>
+          </div>
+          <div class="col-6 col-md-2">
+            <i class="fab fa-linkedin fa-2x trust-logo"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Course Search -->
+    <section class="section-padding bg-light text-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8" data-aos="fade-up">
+            <h2 class="mb-4">Find the Perfect Course for You</h2>
+            <div class="bg-white p-2 rounded-pill shadow-sm d-flex">
+              <input
+                type="text"
+                class="form-control border-0 rounded-pill px-4"
+                placeholder="What do you want to learn today? (e.g. Java, Python, HR)"
+              />
+              <button class="btn btn-gradient rounded-pill px-4">Search</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <h2 class="fw-bold">
+            Why Learn With <span class="text-gradient">Broadway HR?</span>
+          </h2>
+          <p class="text-muted">We don't just teach. We build careers.</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-custom p-4 text-center">
+              <div class="feature-icon mx-auto">
+                <i class="fas fa-chalkboard-teacher"></i>
+              </div>
+              <h4>Industry Mentors</h4>
+              <p class="text-muted">
+                Learn directly from experts working in top MNCs, not just
+                academic teachers.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-custom p-4 text-center">
+              <div class="feature-icon mx-auto">
+                <i class="fas fa-laptop-code"></i>
+              </div>
+              <h4>Hands-on Projects</h4>
+              <p class="text-muted">
+                Build real-world projects that you can showcase in your
+                portfolio.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="card-custom p-4 text-center">
+              <div class="feature-icon mx-auto">
+                <i class="fas fa-briefcase"></i>
+              </div>
+              <h4>Placement Support</h4>
+              <p class="text-muted">
+                Dedicated HR team to help you with resume building and interview
+                prep.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="card-custom p-4 text-center">
+              <div class="feature-icon mx-auto">
+                <i class="fas fa-clock"></i>
+              </div>
+              <h4>Flexible Learning</h4>
+              <p class="text-muted">
+                Weekend and weekday batches available to suit your schedule.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="500">
+            <div class="card-custom p-4 text-center">
+              <div class="feature-icon mx-auto">
+                <i class="fas fa-certificate"></i>
+              </div>
+              <h4>Recognized Certs</h4>
+              <p class="text-muted">
+                Earn certificates that add real value to your professional
+                profile.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+            <div class="card-custom p-4 text-center">
+              <div class="feature-icon mx-auto">
+                <i class="fas fa-users"></i>
+              </div>
+              <h4>Community</h4>
+              <p class="text-muted">
+                Join a vibrant community of learners and alumni helping each
+                other grow.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Popular Courses -->
+    <section class="section-padding bg-light">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-end mb-5">
+          <div data-aos="fade-right">
+            <h2 class="fw-bold">Popular Courses</h2>
+            <p class="text-muted mb-0">
+              Explore our highest-rated training programs
+            </p>
+          </div>
+          <a
+            href="courses.html"
+            class="btn btn-outline-custom"
+            data-aos="fade-left"
+            >View All Courses</a
+          >
+        </div>
+
+        <div class="row g-4">
+          <!-- Course 1 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up">
+            <div class="card-custom p-0 h-100">
+              <div
+                class="bg-secondary position-relative"
+                style="
+                  height: 200px;
+                  background: url(&quot;https://images.unsplash.com/photo-1587620962725-abab7fe55159?q=80&w=600&auto=format&fit=crop&quot;)
+                    center/cover;
+                "
+              >
+                <span
+                  class="badge bg-primary position-absolute top-0 start-0 m-3"
+                  >Programming</span
+                >
+              </div>
+              <div class="p-4">
+                <h4 class="fw-bold mb-2">Full Stack Java Development</h4>
+                <p class="text-muted small mb-3">
+                  <i class="far fa-clock me-1"></i> 6 Months • Beginner to Pro
+                </p>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-4"
+                >
+                  <div class="d-flex align-items-center">
+                    <div class="bg-light rounded-circle p-1 me-2">
+                      <i class="fas fa-user-circle fa-2x text-muted"></i>
+                    </div>
+                    <span class="small fw-bold">By Amit Sir</span>
+                  </div>
+                  <a
+                    href="courses.html"
+                    class="btn btn-sm btn-outline-dark rounded-pill"
+                    >View Details</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Course 2 -->
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="card-custom p-0 h-100">
+              <div
+                class="bg-secondary position-relative"
+                style="
+                  height: 200px;
+                  background: url(&quot;https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=600&auto=format&fit=crop&quot;)
+                    center/cover;
+                "
+              >
+                <span class="badge bg-info position-absolute top-0 start-0 m-3"
+                  >Data Science</span
+                >
+              </div>
+              <div class="p-4">
+                <h4 class="fw-bold mb-2">Data Analytics with Python</h4>
+                <p class="text-muted small mb-3">
+                  <i class="far fa-clock me-1"></i> 4 Months • Job Oriented
+                </p>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-4"
+                >
+                  <div class="d-flex align-items-center">
+                    <div class="bg-light rounded-circle p-1 me-2">
+                      <i class="fas fa-user-circle fa-2x text-muted"></i>
+                    </div>
+                    <span class="small fw-bold">By Priya Ma'am</span>
+                  </div>
+                  <a
+                    href="courses.html"
+                    class="btn btn-sm btn-outline-dark rounded-pill"
+                    >View Details</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Course 3 -->
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="card-custom p-0 h-100">
+              <div
+                class="bg-secondary position-relative"
+                style="
+                  height: 200px;
+                  background: url(&quot;https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=600&auto=format&fit=crop&quot;)
+                    center/cover;
+                "
+              >
+                <span
+                  class="badge bg-success position-absolute top-0 start-0 m-3"
+                  >Management</span
+                >
+              </div>
+              <div class="p-4">
+                <h4 class="fw-bold mb-2">HR Generalist & Payroll</h4>
+                <p class="text-muted small mb-3">
+                  <i class="far fa-clock me-1"></i> 3 Months • Practical
+                </p>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-4"
+                >
+                  <div class="d-flex align-items-center">
+                    <div class="bg-light rounded-circle p-1 me-2">
+                      <i class="fas fa-user-circle fa-2x text-muted"></i>
+                    </div>
+                    <span class="small fw-bold">By Rahul Sir</span>
+                  </div>
+                  <a
+                    href="courses.html"
+                    class="btn btn-sm btn-outline-dark rounded-pill"
+                    >View Details</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Learning Journey -->
+    <section class="section-padding">
+      <div class="container text-center">
+        <h2 class="fw-bold mb-5" data-aos="fade-up">Your Path to Success</h2>
+        <div class="row g-4 position-relative">
+          <!-- Connecting Line (hidden on mobile) -->
+          <div
+            class="d-none d-lg-block position-absolute start-0 w-100"
+            style="
+              top: 50px;
+              height: 2px;
+              background: repeating-linear-gradient(
+                90deg,
+                var(--primary) 0,
+                var(--primary) 10px,
+                transparent 10px,
+                transparent 20px
+              );
+              z-index: -1;
+            "
+          ></div>
+
+          <div
+            class="col-lg-3 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div
+              class="bg-white p-4 rounded-circle shadow-sm d-inline-block mb-3"
+              style="
+                width: 100px;
+                height: 100px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <i class="fas fa-book-open fa-2x text-primary"></i>
+            </div>
+            <h5>1. Learn</h5>
+            <p class="small text-muted">
+              Master concepts with live interactive classes.
+            </p>
+          </div>
+          <div
+            class="col-lg-3 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div
+              class="bg-white p-4 rounded-circle shadow-sm d-inline-block mb-3"
+              style="
+                width: 100px;
+                height: 100px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <i class="fas fa-code fa-2x text-primary"></i>
+            </div>
+            <h5>2. Practice</h5>
+            <p class="small text-muted">
+              Work on assignments and real-time projects.
+            </p>
+          </div>
+          <div
+            class="col-lg-3 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div
+              class="bg-white p-4 rounded-circle shadow-sm d-inline-block mb-3"
+              style="
+                width: 100px;
+                height: 100px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <i class="fas fa-user-tie fa-2x text-primary"></i>
+            </div>
+            <h5>3. Internship</h5>
+            <p class="small text-muted">
+              Get industry exposure and build your CV.
+            </p>
+          </div>
+          <div
+            class="col-lg-3 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div
+              class="bg-white p-4 rounded-circle shadow-sm d-inline-block mb-3"
+              style="
+                width: 100px;
+                height: 100px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <i class="fas fa-rocket fa-2x text-primary"></i>
+            </div>
+            <h5>4. Placement</h5>
+            <p class="small text-muted">
+              Crack interviews and get your dream job.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials (Swiper) -->
+    <section class="section-padding bg-light">
+      <div class="container">
+        <h2 class="fw-bold text-center mb-5" data-aos="fade-up">
+          Student Success Stories
+        </h2>
+        <div class="swiper testimonials-slider pb-5" data-aos="fade-up">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card-custom p-4">
+                <div class="d-flex align-items-center mb-3">
+                  <div
+                    class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center"
+                    style="width: 50px; height: 50px"
+                  >
+                    A
+                  </div>
+                  <div class="ms-3">
+                    <h5 class="mb-0">Anjali Singh</h5>
+                    <small class="text-muted">Placed at TCS</small>
+                  </div>
+                </div>
+                <p class="text-muted">
+                  "The practical training was a game changer. I learned skills
+                  that helped me clear the technical rounds easily."
+                </p>
+                <div class="text-warning">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-custom p-4">
+                <div class="d-flex align-items-center mb-3">
+                  <div
+                    class="bg-secondary text-white rounded-circle d-flex align-items-center justify-content-center"
+                    style="width: 50px; height: 50px"
+                  >
+                    R
+                  </div>
+                  <div class="ms-3">
+                    <h5 class="mb-0">Rohan Das</h5>
+                    <small class="text-muted">Placed at Infosys</small>
+                  </div>
+                </div>
+                <p class="text-muted">
+                  "Broadway HR's placement support is amazing. They guided me
+                  from resume building to mock interviews."
+                </p>
+                <div class="text-warning">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-custom p-4">
+                <div class="d-flex align-items-center mb-3">
+                  <div
+                    class="bg-success text-white rounded-circle d-flex align-items-center justify-content-center"
+                    style="width: 50px; height: 50px"
+                  >
+                    S
+                  </div>
+                  <div class="ms-3">
+                    <h5 class="mb-0">Sneha K.</h5>
+                    <small class="text-muted">Placed at Accenture</small>
+                  </div>
+                </div>
+                <p class="text-muted">
+                  "The HR course was very detailed and practical. It helped me
+                  switch my career from Admin to HR."
+                </p>
+                <div class="text-warning">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section-padding bg-gradient-primary text-white text-center">
+      <div class="container" data-aos="zoom-in">
+        <h2 class="fw-bold mb-4">Start Your Career Journey With Broadway HR</h2>
+        <p class="lead mb-4 op-8">
+          Join hundreds of students getting trained and placed every month.
+        </p>
+        <a
+          href="https://wa.me/919876543210"
+          class="btn btn-light btn-lg rounded-pill fw-bold text-primary px-5 shadow"
+          ><i class="fab fa-whatsapp me-2"></i> Talk to Career Advisor</a
+        >
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container pb-5">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <h4 class="mb-4 text-white">
+              <i class="fas fa-graduation-cap me-2"></i>Broadway HR
+            </h4>
+            <p class="text-white-50">
+              Empowering careers through industry-relevant training and
+              placement support. We bridge the gap between education and
+              employment.
+            </p>
+            <div class="d-flex gap-3">
+              <a href="#"><i class="fab fa-facebook fa-lg"></i></a>
+              <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
+              <a href="#"><i class="fab fa-linkedin fa-lg"></i></a>
+              <a href="#"><i class="fab fa-youtube fa-lg"></i></a>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <h5 class="mb-3 text-white">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="index.html">Home</a></li>
+              <li class="mb-2"><a href="about.html">About Us</a></li>
+              <li class="mb-2"><a href="courses.html">Courses</a></li>
+              <li class="mb-2"><a href="services.html">Services</a></li>
+              <li class="mb-2"><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5 class="mb-3 text-white">Courses</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="courses.html">Java Full Stack</a></li>
+              <li class="mb-2"><a href="courses.html">Data Science</a></li>
+              <li class="mb-2"><a href="courses.html">Digital Marketing</a></li>
+              <li class="mb-2"><a href="courses.html">HR Generalist</a></li>
+              <li class="mb-2"><a href="courses.html">Web Design</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5 class="mb-3 text-white">Contact Us</h5>
+            <ul class="list-unstyled text-white-50">
+              <li class="mb-2">
+                <i class="fas fa-map-marker-alt me-2"></i> 123, Tech Plaza, IT
+                Park, City
+              </li>
+              <li class="mb-2">
+                <i class="fas fa-phone me-2"></i> +91 98765 43210
+              </li>
+              <li class="mb-2">
+                <i class="fas fa-envelope me-2"></i> info@broadwayhr.com
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="border-top border-secondary mt-5 pt-4 text-center text-white-50"
+        >
+          <p>
+            &copy; 2024 Broadway HR Computer Education. All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/919876543210" class="whatsapp-float" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
