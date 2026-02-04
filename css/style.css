@@ -23,6 +23,12 @@ body {
   color: var(--text-dark);
   background-color: var(--bg-white);
   line-height: 1.6;
+  overflow-x: hidden; /* Prevent horizontal scroll on mobile */
+  width: 100%;
+}
+
+html {
+  overflow-x: hidden;
 }
 
 h1,
@@ -196,9 +202,8 @@ a {
 
 .trust-logo {
   height: 30px;
-  opacity: 0.6;
-  filter: grayscale(100%);
   transition: all 0.3s ease;
+  /* Dark color enforced via image source, ensuring no opacity drop */
 }
 
 .trust-logo:hover {
