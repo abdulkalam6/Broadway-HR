@@ -47,6 +47,7 @@
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
+          title="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -58,8 +59,55 @@
             <li class="nav-item">
               <a class="nav-link" href="courses.html">Courses</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="services.html">Services</a>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="services.html"
+                id="servicesDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Services
+              </a>
+              <ul
+                class="dropdown-menu border-0 shadow-sm"
+                aria-labelledby="servicesDropdown"
+              >
+                <li>
+                  <a class="dropdown-item" href="services.html">All Services</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="services.html"
+                    >Training Programs</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="services.html"
+                    >Corporate Training</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="services.html"
+                    >Placement Assistance</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="services.html">Incubator</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="services.html">Franchise</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="services.html">Workshops</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="services.html"
+                    >Live Projects</a
+                  >
+                </li>
+              </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="about.html">About Us</a>
@@ -145,26 +193,68 @@
         <p class="text-muted small fw-bold text-uppercase mb-4">
           Aligned with Industry Standards
         </p>
-                <div class="row justify-content-center align-items-center g-4 grayscale-logos overflow-hidden">
-                    <div class="col-6 col-md-2"><img src="https://dummyimage.com/180x80/ffffff/000000&text=Google" alt="Google" class="img-fluid trust-logo"></div>
-                    <div class="col-6 col-md-2"><img src="https://dummyimage.com/180x80/ffffff/000000&text=Microsoft" alt="Microsoft" class="img-fluid trust-logo"></div>
-                    <div class="col-6 col-md-2"><img src="https://dummyimage.com/180x80/ffffff/000000&text=Amazon" alt="Amazon" class="img-fluid trust-logo"></div>
-                    <div class="col-6 col-md-2"><img src="https://dummyimage.com/180x80/ffffff/000000&text=Coursera" alt="Coursera" class="img-fluid trust-logo"></div>
-                    <div class="col-6 col-md-2"><img src="https://dummyimage.com/180x80/ffffff/000000&text=GitHub" alt="GitHub" class="img-fluid trust-logo"></div>
-                </div>
+        <div
+          class="row justify-content-center align-items-center g-4 grayscale-logos overflow-hidden"
+        >
+          <div class="col-6 col-md-2">
+            <img
+              src="https://dummyimage.com/180x80/ffffff/000000&text=Google"
+              alt="Google"
+              class="img-fluid trust-logo"
+            />
+          </div>
+          <div class="col-6 col-md-2">
+            <img
+              src="https://dummyimage.com/180x80/ffffff/000000&text=Microsoft"
+              alt="Microsoft"
+              class="img-fluid trust-logo"
+            />
+          </div>
+          <div class="col-6 col-md-2">
+            <img
+              src="https://dummyimage.com/180x80/ffffff/000000&text=Amazon"
+              alt="Amazon"
+              class="img-fluid trust-logo"
+            />
+          </div>
+          <div class="col-6 col-md-2">
+            <img
+              src="https://dummyimage.com/180x80/ffffff/000000&text=Coursera"
+              alt="Coursera"
+              class="img-fluid trust-logo"
+            />
+          </div>
+          <div class="col-6 col-md-2">
+            <img
+              src="https://dummyimage.com/180x80/ffffff/000000&text=GitHub"
+              alt="GitHub"
+              class="img-fluid trust-logo"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Course Search -->
+    <section class="section-padding bg-light text-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8" data-aos="fade-up">
+            <h2 class="mb-4">Find the Perfect Course for You</h2>
+            <div class="bg-white p-2 rounded-pill shadow-sm d-flex">
+              <input
+                type="text"
+                id="homeSearchInput"
+                class="form-control border-0 rounded-pill px-4"
+                placeholder="What do you want to learn today? (e.g. Java, Python, HR)"
+              />
+              <button
+                id="homeSearchBtn"
+                class="btn btn-gradient rounded-pill px-4"
+              >
+                Search
+              </button>
             </div>
-        </section>
-    
-        <!-- Course Search -->
-        <section class="section-padding bg-light text-center">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8" data-aos="fade-up">
-                        <h2 class="mb-4">Find the Perfect Course for You</h2>
-                        <div class="bg-white p-2 rounded-pill shadow-sm d-flex">
-                            <input type="text" id="homeSearchInput" class="form-control border-0 rounded-pill px-4" placeholder="What do you want to learn today? (e.g. Java, Python, HR)">
-                            <button id="homeSearchBtn" class="btn btn-gradient rounded-pill px-4">Search</button>
-                        </div>
           </div>
         </div>
       </div>
@@ -519,6 +609,83 @@
       </div>
     </section>
 
+    <!-- Specialized Services -->
+    <section class="section-padding bg-light">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <h2 class="fw-bold">
+            Our <span class="text-gradient">Specialized Services</span>
+          </h2>
+          <p class="text-muted">
+            Explore our wide range of professional career support services.
+          </p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-3" data-aos="fade-up">
+            <div class="card-custom p-4 text-center h-100">
+              <div
+                class="feature-icon mx-auto bg-primary text-white mb-3"
+                style="width: 60px; height: 60px; font-size: 1.5rem"
+              >
+                <i class="fas fa-rocket"></i>
+              </div>
+              <h5>Incubator</h5>
+              <p class="small text-muted mb-0">
+                Nurturing startup ideas and student entrepreneurship.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-custom p-4 text-center h-100">
+              <div
+                class="feature-icon mx-auto bg-dark text-white mb-3"
+                style="width: 60px; height: 60px; font-size: 1.5rem"
+              >
+                <i class="fas fa-building"></i>
+              </div>
+              <h5>Franchise</h5>
+              <p class="small text-muted mb-0">
+                Partner with us to grow your own training center.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-custom p-4 text-center h-100">
+              <div
+                class="feature-icon mx-auto bg-warning text-dark mb-3"
+                style="width: 60px; height: 60px; font-size: 1.5rem"
+              >
+                <i class="fas fa-tools"></i>
+              </div>
+              <h5>Workshops</h5>
+              <p class="small text-muted mb-0">
+                Short-term intensive industrial workshops.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
+            <div class="card-custom p-4 text-center h-100">
+              <div
+                class="feature-icon mx-auto bg-success text-white mb-3"
+                style="width: 60px; height: 60px; font-size: 1.5rem"
+              >
+                <i class="fas fa-project-diagram"></i>
+              </div>
+              <h5>Live Projects</h5>
+              <p class="small text-muted mb-0">
+                Work on real industrial projects with experts.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-5">
+          <a href="services.html" class="btn btn-outline-custom"
+            >View All Services</a
+          >
+        </div>
+      </div>
+    </section>
+
     <!-- Testimonials (Swiper) -->
     <section class="section-padding bg-light">
       <div class="container">
@@ -627,7 +794,7 @@
     <footer>
       <div class="container pb-5">
         <div class="row g-4">
-          <div class="col-md-4">
+          <div class="col-md-3">
             <h4 class="mb-4 text-white">
               <i class="fas fa-graduation-cap me-2"></i>Broadway HR
             </h4>
@@ -637,10 +804,18 @@
               employment.
             </p>
             <div class="d-flex gap-3">
-              <a href="#"><i class="fab fa-facebook fa-lg"></i></a>
-              <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
-              <a href="#"><i class="fab fa-linkedin fa-lg"></i></a>
-              <a href="#"><i class="fab fa-youtube fa-lg"></i></a>
+              <a href="#" title="Facebook" rel="noopener"
+                ><i class="fab fa-facebook fa-lg"></i
+              ></a>
+              <a href="#" title="Instagram" rel="noopener"
+                ><i class="fab fa-instagram fa-lg"></i
+              ></a>
+              <a href="#" title="LinkedIn" rel="noopener"
+                ><i class="fab fa-linkedin fa-lg"></i
+              ></a>
+              <a href="#" title="YouTube" rel="noopener"
+                ><i class="fab fa-youtube fa-lg"></i
+              ></a>
             </div>
           </div>
           <div class="col-md-2">
@@ -653,14 +828,23 @@
               <li class="mb-2"><a href="contact.html">Contact</a></li>
             </ul>
           </div>
-          <div class="col-md-3">
-            <h5 class="mb-3 text-white">Courses</h5>
+          <div class="col-md-2">
+            <h5 class="mb-3 text-white">Our Services</h5>
             <ul class="list-unstyled">
-              <li class="mb-2"><a href="courses.html">Java Full Stack</a></li>
+              <li class="mb-2"><a href="services.html">Incubator</a></li>
+              <li class="mb-2"><a href="services.html">Franchise</a></li>
+              <li class="mb-2"><a href="services.html">Workshops</a></li>
+              <li class="mb-2"><a href="services.html">Live Projects</a></li>
+              <li class="mb-2"><a href="services.html">Placement</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h5 class="mb-3 text-white">Top Courses</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="courses.html">Java Stack</a></li>
               <li class="mb-2"><a href="courses.html">Data Science</a></li>
               <li class="mb-2"><a href="courses.html">Digital Marketing</a></li>
               <li class="mb-2"><a href="courses.html">HR Generalist</a></li>
-              <li class="mb-2"><a href="courses.html">Web Design</a></li>
             </ul>
           </div>
           <div class="col-md-3">

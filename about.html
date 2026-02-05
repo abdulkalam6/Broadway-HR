@@ -1,186 +1,311 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us | Broadway HR</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <i class="fas fa-graduation-cap me-2"></i>Broadway HR
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto align-items-center">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
-                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="about.html">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                    <li class="nav-item ms-lg-3">
-                        <a href="contact.html" class="btn btn-gradient">Enroll Now</a>
-                    </li>
-                </ul>
-            </div>
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <i class="fas fa-graduation-cap me-2"></i>Broadway HR
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto align-items-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="courses.html">Courses</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="services.html"
+                id="servicesDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Services
+              </a>
+              <ul
+                class="dropdown-menu border-0 shadow-sm"
+                aria-labelledby="servicesDropdown"
+              >
+                <li>
+                  <a class="dropdown-item" href="services.html">All Services</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="services.html"
+                    >Training Programs</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="services.html"
+                    >Corporate Training</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="services.html"
+                    >Placement Assistance</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="services.html">Incubator</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="services.html">Franchise</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="services.html">Workshops</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="services.html"
+                    >Live Projects</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item ms-lg-3">
+              <a href="contact.html" class="btn btn-gradient">Enroll Now</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
     <!-- Header -->
     <header class="bg-light section-padding pt-5 pb-5 mt-5">
-        <div class="container text-center pt-5">
-            <h1 class="fw-bold display-5">Our Story & <span class="text-gradient">Mission</span></h1>
-            <p class="text-muted lead">Redefining Education for the Modern Workforce.</p>
-        </div>
+      <div class="container text-center pt-5">
+        <h1 class="fw-bold display-5">
+          Our Story & <span class="text-gradient">Mission</span>
+        </h1>
+        <p class="text-muted lead">
+          Redefining Education for the Modern Workforce.
+        </p>
+      </div>
     </header>
 
     <!-- Main Content -->
     <section class="section-padding">
-        <div class="container">
-            <div class="row align-items-center mb-5">
-                <div class="col-lg-6" data-aos="fade-right">
-                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=800&auto=format&fit=crop" alt="Team Collaboration" class="img-fluid rounded-4 shadow-lg">
-                </div>
-                <div class="col-lg-6 ps-lg-5" data-aos="fade-left">
-                    <h2 class="fw-bold mb-4">Who We Are</h2>
-                    <p class="text-muted mb-4">
-                        Broadway HR Computer Education is not just another training institute. We are a career launchpad. Founded with the vision to bridge the gap between academic learning and industry requirements, we have successfully trained and placed thousands of students in top MNCs and startups.
-                    </p>
-                    <p class="text-muted">
-                        We believe in practical, hands-on learning. Our curriculum is constantly updated by industry experts to ensure you learn what the market demands today (and tomorrow).
-                    </p>
-                </div>
-            </div>
-
-            <div class="row g-4 mt-5">
-                <div class="col-md-4" data-aos="fade-up">
-                    <div class="p-4 border rounded-4 h-100 bg-white shadow-sm">
-                        <h3 class="h4 fw-bold text-primary mb-3">Our Mission</h3>
-                        <p class="text-muted">To empower individuals with affordable, high-quality technical education and soft skills training to make them employable globally.</p>
-                    </div>
-                </div>
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="p-4 border rounded-4 h-100 bg-white shadow-sm">
-                        <h3 class="h4 fw-bold text-secondary mb-3">Our Vision</h3>
-                        <p class="text-muted">To be the most trusted name in vocational training and placement, creating a skilled workforce that drives innovation.</p>
-                    </div>
-                </div>
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="p-4 border rounded-4 h-100 bg-white shadow-sm">
-                        <h3 class="h4 fw-bold text-success mb-3">Core Values</h3>
-                        <p class="text-muted">Integrity, Student-Centricity, Excellence, and Constant Innovation constitute the DNA of Broadway HR.</p>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row align-items-center mb-5">
+          <div class="col-lg-6" data-aos="fade-right">
+            <img
+              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=800&auto=format&fit=crop"
+              alt="Team Collaboration"
+              class="img-fluid rounded-4 shadow-lg"
+            />
+          </div>
+          <div class="col-lg-6 ps-lg-5" data-aos="fade-left">
+            <h2 class="fw-bold mb-4">Who We Are</h2>
+            <p class="text-muted mb-4">
+              Broadway HR Computer Education is not just another training
+              institute. We are a career launchpad. Founded with the vision to
+              bridge the gap between academic learning and industry
+              requirements, we have successfully trained and placed thousands of
+              students in top MNCs and startups.
+            </p>
+            <p class="text-muted">
+              We believe in practical, hands-on learning. Our curriculum is
+              constantly updated by industry experts to ensure you learn what
+              the market demands today (and tomorrow).
+            </p>
+          </div>
         </div>
+
+        <div class="row g-4 mt-5">
+          <div class="col-md-4" data-aos="fade-up">
+            <div class="p-4 border rounded-4 h-100 bg-white shadow-sm">
+              <h3 class="h4 fw-bold text-primary mb-3">Our Mission</h3>
+              <p class="text-muted">
+                To empower individuals with affordable, high-quality technical
+                education and soft skills training to make them employable
+                globally.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="p-4 border rounded-4 h-100 bg-white shadow-sm">
+              <h3 class="h4 fw-bold text-secondary mb-3">Our Vision</h3>
+              <p class="text-muted">
+                To be the most trusted name in vocational training and
+                placement, creating a skilled workforce that drives innovation.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="p-4 border rounded-4 h-100 bg-white shadow-sm">
+              <h3 class="h4 fw-bold text-success mb-3">Core Values</h3>
+              <p class="text-muted">
+                Integrity, Student-Centricity, Excellence, and Constant
+                Innovation constitute the DNA of Broadway HR.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Stats -->
     <section class="section-padding bg-gradient-primary text-white">
-        <div class="container text-center">
-            <div class="row">
-                <div class="col-md-3 mb-4 mb-md-0" data-aos="zoom-in">
-                    <h2 class="display-4 fw-bold">10+</h2>
-                    <p class="op-8">Years of Excellence</p>
-                </div>
-                <div class="col-md-3 mb-4 mb-md-0" data-aos="zoom-in" data-aos-delay="100">
-                    <h2 class="display-4 fw-bold">5000+</h2>
-                    <p class="op-8">Students Trained</p>
-                </div>
-                <div class="col-md-3 mb-4 mb-md-0" data-aos="zoom-in" data-aos-delay="200">
-                    <h2 class="display-4 fw-bold">200+</h2>
-                    <p class="op-8">Hiring Partners</p>
-                </div>
-                <div class="col-md-3" data-aos="zoom-in" data-aos-delay="300">
-                    <h2 class="display-4 fw-bold">95%</h2>
-                    <p class="op-8">Placement Success</p>
-                </div>
-            </div>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-md-3 mb-4 mb-md-0" data-aos="zoom-in">
+            <h2 class="display-4 fw-bold">10+</h2>
+            <p class="op-8">Years of Excellence</p>
+          </div>
+          <div
+            class="col-md-3 mb-4 mb-md-0"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
+            <h2 class="display-4 fw-bold">5000+</h2>
+            <p class="op-8">Students Trained</p>
+          </div>
+          <div
+            class="col-md-3 mb-4 mb-md-0"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
+            <h2 class="display-4 fw-bold">200+</h2>
+            <p class="op-8">Hiring Partners</p>
+          </div>
+          <div class="col-md-3" data-aos="zoom-in" data-aos-delay="300">
+            <h2 class="display-4 fw-bold">95%</h2>
+            <p class="op-8">Placement Success</p>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="container pb-5">
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <h4 class="mb-4 text-white">
-                        <i class="fas fa-graduation-cap me-2"></i>Broadway HR
-                    </h4>
-                    <p class="text-white-50">
-                        Empowering careers through industry-relevant training and
-                        placement support. We bridge the gap between education and
-                        employment.
-                    </p>
-                    <div class="d-flex gap-3">
-                        <a href="#"><i class="fab fa-facebook fa-lg"></i></a>
-                        <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
-                        <a href="#"><i class="fab fa-linkedin fa-lg"></i></a>
-                        <a href="#"><i class="fab fa-youtube fa-lg"></i></a>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <h5 class="mb-3 text-white">Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="index.html">Home</a></li>
-                        <li class="mb-2"><a href="about.html">About Us</a></li>
-                        <li class="mb-2"><a href="courses.html">Courses</a></li>
-                        <li class="mb-2"><a href="services.html">Services</a></li>
-                        <li class="mb-2"><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <h5 class="mb-3 text-white">Courses</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="courses.html">Java Full Stack</a></li>
-                        <li class="mb-2"><a href="courses.html">Data Science</a></li>
-                        <li class="mb-2"><a href="courses.html">Digital Marketing</a></li>
-                        <li class="mb-2"><a href="courses.html">HR Generalist</a></li>
-                        <li class="mb-2"><a href="courses.html">Web Design</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <h5 class="mb-3 text-white">Contact Us</h5>
-                    <ul class="list-unstyled text-white-50">
-                        <li class="mb-2">
-                            <i class="fas fa-map-marker-alt me-2"></i> 123, Tech Plaza, IT
-                            Park, City
-                        </li>
-                        <li class="mb-2">
-                            <i class="fas fa-phone me-2"></i> +91 98765 43210
-                        </li>
-                        <li class="mb-2">
-                            <i class="fas fa-envelope me-2"></i> info@broadwayhr.com
-                        </li>
-                    </ul>
-                </div>
+      <div class="container pb-5">
+        <div class="row g-4">
+          <div class="col-md-3">
+            <h4 class="mb-4 text-white">
+              <i class="fas fa-graduation-cap me-2"></i>Broadway HR
+            </h4>
+            <p class="text-white-50">
+              Empowering careers through industry-relevant training and
+              placement support. We bridge the gap between education and
+              employment.
+            </p>
+            <div class="d-flex gap-3">
+              <a href="#" title="Facebook" rel="noopener"
+                ><i class="fab fa-facebook fa-lg"></i
+              ></a>
+              <a href="#" title="Instagram" rel="noopener"
+                ><i class="fab fa-instagram fa-lg"></i
+              ></a>
+              <a href="#" title="LinkedIn" rel="noopener"
+                ><i class="fab fa-linkedin fa-lg"></i
+              ></a>
+              <a href="#" title="YouTube" rel="noopener"
+                ><i class="fab fa-youtube fa-lg"></i
+              ></a>
             </div>
-            <div
-                class="border-top border-secondary mt-5 pt-4 text-center text-white-50"
-            >
-                <p>
-                    &copy; 2026 Broadway HR Computer Education. All Rights Reserved.
-                </p>
-            </div>
+          </div>
+          <div class="col-md-2">
+            <h5 class="mb-3 text-white">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="index.html">Home</a></li>
+              <li class="mb-2"><a href="about.html">About Us</a></li>
+              <li class="mb-2"><a href="courses.html">Courses</a></li>
+              <li class="mb-2"><a href="services.html">Services</a></li>
+              <li class="mb-2"><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h5 class="mb-3 text-white">Our Services</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="services.html">Incubator</a></li>
+              <li class="mb-2"><a href="services.html">Franchise</a></li>
+              <li class="mb-2"><a href="services.html">Workshops</a></li>
+              <li class="mb-2"><a href="services.html">Live Projects</a></li>
+              <li class="mb-2"><a href="services.html">Placement</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h5 class="mb-3 text-white">Top Courses</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="courses.html">Java Stack</a></li>
+              <li class="mb-2"><a href="courses.html">Data Science</a></li>
+              <li class="mb-2"><a href="courses.html">Digital Marketing</a></li>
+              <li class="mb-2"><a href="courses.html">HR Generalist</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5 class="mb-3 text-white">Contact Us</h5>
+            <ul class="list-unstyled text-white-50">
+              <li class="mb-2">
+                <i class="fas fa-map-marker-alt me-2"></i> 123, Tech Plaza, IT
+                Park, City
+              </li>
+              <li class="mb-2">
+                <i class="fas fa-phone me-2"></i> +91 98765 43210
+              </li>
+              <li class="mb-2">
+                <i class="fas fa-envelope me-2"></i> info@broadwayhr.com
+              </li>
+            </ul>
+          </div>
         </div>
+        <div
+          class="border-top border-secondary mt-5 pt-4 text-center text-white-50"
+        >
+          <p>
+            &copy; 2026 Broadway HR Computer Education. All Rights Reserved.
+          </p>
+        </div>
+      </div>
     </footer>
 
-    <a href="https://wa.me/919876543210" class="whatsapp-float" target="_blank">
-        <i class="fab fa-whatsapp"></i>
+    <a
+      href="https://wa.me/919876543210"
+      class="whatsapp-float"
+      target="_blank"
+      title="WhatsApp Us"
+      rel="noopener"
+    >
+      <i class="fab fa-whatsapp"></i>
     </a>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>

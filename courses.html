@@ -1,263 +1,537 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Courses | Broadway HR</title>
     <!-- Dependencies -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <!-- Navbar (Same as Index) -->
     <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <i class="fas fa-graduation-cap me-2"></i>Broadway HR
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto align-items-center">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="courses.html">Courses</a></li>
-                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                    <li class="nav-item ms-lg-3">
-                        <a href="contact.html" class="btn btn-gradient">Enroll Now</a>
-                    </li>
-                </ul>
-            </div>
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <i class="fas fa-graduation-cap me-2"></i>Broadway HR
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto align-items-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="courses.html">Courses</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="services.html"
+                id="servicesDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Services
+              </a>
+              <ul
+                class="dropdown-menu border-0 shadow-sm"
+                aria-labelledby="servicesDropdown"
+              >
+                <li>
+                  <a class="dropdown-item" href="services.html">All Services</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="services.html"
+                    >Training Programs</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="services.html"
+                    >Corporate Training</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="services.html"
+                    >Placement Assistance</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="services.html">Incubator</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="services.html">Franchise</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="services.html">Workshops</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="services.html"
+                    >Live Projects</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item ms-lg-3">
+              <a href="contact.html" class="btn btn-gradient">Enroll Now</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
     <!-- Page Header -->
     <header class="bg-light section-padding pt-5 pb-5 mt-5">
-        <div class="container text-center pt-5">
-            <h1 class="fw-bold display-5">Explore Our <span class="text-gradient">Premium Courses</span></h1>
-            <p class="text-muted lead">Skill up with industry-ready programs designed for your growth.</p>
-        </div>
+      <div class="container text-center pt-5">
+        <h1 class="fw-bold display-5">
+          Explore Our <span class="text-gradient">Premium Courses</span>
+        </h1>
+        <p class="text-muted lead">
+          Skill up with industry-ready programs designed for your growth.
+        </p>
+      </div>
     </header>
 
     <!-- Filters & Search -->
-    <section class="py-4 border-bottom sticky-top bg-white" style="top: 76px; z-index: 10;">
-        <div class="container">
-            <div class="row align-items-center g-3">
-                <div class="col-md-6">
-                    <div class="d-flex gap-2 overflow-auto pb-1" style="white-space: nowrap;">
-                        <button class="btn btn-sm btn-gradient rounded-pill filter-btn" data-filter="all">All</button>
-                        <button class="btn btn-sm btn-outline-secondary rounded-pill filter-btn" data-filter="programming">Programming</button>
-                        <button class="btn btn-sm btn-outline-secondary rounded-pill filter-btn" data-filter="data">Data Science</button>
-                        <button class="btn btn-sm btn-outline-secondary rounded-pill filter-btn" data-filter="business">HR & Mgmt</button>
-                        <button class="btn btn-sm btn-outline-secondary rounded-pill filter-btn" data-filter="design">Design</button>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="input-group">
-                        <span class="input-group-text bg-white border-end-0 rounded-start-pill"><i class="fas fa-search text-muted"></i></span>
-                        <input type="text" id="courseSearchInput" class="form-control border-start-0 rounded-end-pill" placeholder="Search for courses...">
-                    </div>
-                </div>
+    <section
+      class="py-4 border-bottom sticky-top bg-white"
+      style="top: 76px; z-index: 10"
+    >
+      <div class="container">
+        <div class="row align-items-center g-3">
+          <div class="col-md-6">
+            <div
+              class="d-flex gap-2 overflow-auto pb-1"
+              style="white-space: nowrap"
+            >
+              <button
+                class="btn btn-sm btn-gradient rounded-pill filter-btn"
+                data-filter="all"
+              >
+                All
+              </button>
+              <button
+                class="btn btn-sm btn-outline-secondary rounded-pill filter-btn"
+                data-filter="programming"
+              >
+                Programming
+              </button>
+              <button
+                class="btn btn-sm btn-outline-secondary rounded-pill filter-btn"
+                data-filter="data"
+              >
+                Data Science
+              </button>
+              <button
+                class="btn btn-sm btn-outline-secondary rounded-pill filter-btn"
+                data-filter="business"
+              >
+                HR & Mgmt
+              </button>
+              <button
+                class="btn btn-sm btn-outline-secondary rounded-pill filter-btn"
+                data-filter="design"
+              >
+                Design
+              </button>
             </div>
+          </div>
+          <div class="col-md-6">
+            <div class="input-group">
+              <span
+                class="input-group-text bg-white border-end-0 rounded-start-pill"
+                ><i class="fas fa-search text-muted"></i
+              ></span>
+              <input
+                type="text"
+                id="courseSearchInput"
+                class="form-control border-start-0 rounded-end-pill"
+                placeholder="Search for courses..."
+              />
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Courses Grid -->
     <section class="section-padding">
-        <div class="container">
-            <div class="row g-4" id="courseContainer">
-                <!-- Course Card 1 -->
-                <div class="col-lg-4 col-md-6" data-aos="fade-up">
-                    <div class="card-custom p-0 h-100">
-                        <div class="bg-secondary position-relative" style="height: 200px; background: url('https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?q=80&w=600&auto=format&fit=crop') center/cover;">
-                            <span class="badge bg-primary position-absolute top-0 start-0 m-3">Programming</span>
-                        </div>
-                        <div class="p-4">
-                            <h4 class="fw-bold mb-2">Python Masterclass</h4>
-                            <p class="text-muted small mb-3"><i class="far fa-clock me-1"></i> 3 Months • From Scratch</p>
-                            <p class="card-text text-muted">Learn Python from basics to advanced, covering data structures, OOPs, and web scraping.</p>
-                            <div class="d-flex justify-content-between align-items-center mt-4">
-                                <span class="fw-bold text-primary">Coming Soon</span>
-                                <a href="contact.html" class="btn btn-sm btn-outline-dark rounded-pill">Enquire</a>
-                            </div>
-                        </div>
-                    </div>
+      <div class="container">
+        <div class="row g-4" id="courseContainer">
+          <!-- Course Card 1 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up">
+            <div class="card-custom p-0 h-100">
+              <div
+                class="bg-secondary position-relative"
+                style="
+                  height: 200px;
+                  background: url(&quot;https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?q=80&w=600&auto=format&fit=crop&quot;)
+                    center/cover;
+                "
+              >
+                <span
+                  class="badge bg-primary position-absolute top-0 start-0 m-3"
+                  >Programming</span
+                >
+              </div>
+              <div class="p-4">
+                <h4 class="fw-bold mb-2">Python Masterclass</h4>
+                <p class="text-muted small mb-3">
+                  <i class="far fa-clock me-1"></i> 3 Months • From Scratch
+                </p>
+                <p class="card-text text-muted">
+                  Learn Python from basics to advanced, covering data
+                  structures, OOPs, and web scraping.
+                </p>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-4"
+                >
+                  <span class="fw-bold text-primary">Coming Soon</span>
+                  <a
+                    href="contact.html"
+                    class="btn btn-sm btn-outline-dark rounded-pill"
+                    >Enquire</a
+                  >
                 </div>
-
-                <!-- Course Card 2 -->
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card-custom p-0 h-100">
-                        <div class="bg-secondary position-relative" style="height: 200px; background: url('https://images.unsplash.com/photo-1593642532400-2682810df593?q=80&w=600&auto=format&fit=crop') center/cover;">
-                            <span class="badge bg-danger position-absolute top-0 start-0 m-3">Web Dev</span>
-                        </div>
-                        <div class="p-4">
-                            <h4 class="fw-bold mb-2">MERN Stack Development</h4>
-                            <p class="text-muted small mb-3"><i class="far fa-clock me-1"></i> 6 Months • Full Stack</p>
-                            <p class="card-text text-muted">Become a full-stack developer with React, Node.js, Express, and MongoDB.</p>
-                            <div class="d-flex justify-content-between align-items-center mt-4">
-                                <span class="fw-bold text-primary">Admissions Open</span>
-                                <a href="contact.html" class="btn btn-sm btn-outline-dark rounded-pill">Enquire</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Course Card 3 -->
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card-custom p-0 h-100">
-                        <div class="bg-secondary position-relative" style="height: 200px; background: url('https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=600&auto=format&fit=crop') center/cover;">
-                            <span class="badge bg-info position-absolute top-0 start-0 m-3">Business</span>
-                        </div>
-                        <div class="p-4">
-                            <h4 class="fw-bold mb-2">Professional HR Training</h4>
-                            <p class="text-muted small mb-3"><i class="far fa-clock me-1"></i> 3 Months • Practical</p>
-                            <p class="card-text text-muted">Master payroll, recruitment, compliance, and core HR operations.</p>
-                            <div class="d-flex justify-content-between align-items-center mt-4">
-                                <span class="fw-bold text-primary">Trending</span>
-                                <a href="contact.html" class="btn btn-sm btn-outline-dark rounded-pill">Enquire</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Course Card 4 -->
-                <div class="col-lg-4 col-md-6" data-aos="fade-up">
-                    <div class="card-custom p-0 h-100">
-                        <div class="bg-secondary position-relative" style="height: 200px; background: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=600&auto=format&fit=crop') center/cover;">
-                            <span class="badge bg-success position-absolute top-0 start-0 m-3">Data</span>
-                        </div>
-                        <div class="p-4">
-                            <h4 class="fw-bold mb-2">Data Science & AI</h4>
-                            <p class="text-muted small mb-3"><i class="far fa-clock me-1"></i> 8 Months • Advanced</p>
-                            <p class="card-text text-muted">Learn machine learning, deep learning, and data visualization tools.</p>
-                            <div class="d-flex justify-content-between align-items-center mt-4">
-                                <span class="fw-bold text-primary">Limited Seats</span>
-                                <a href="contact.html" class="btn btn-sm btn-outline-dark rounded-pill">Enquire</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Course Card 5 -->
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card-custom p-0 h-100">
-                        <div class="bg-secondary position-relative" style="height: 200px; background: url('https://images.unsplash.com/photo-1557838923-2985c318be48?q=80&w=600&auto=format&fit=crop') center/cover;">
-                            <span class="badge bg-warning text-dark position-absolute top-0 start-0 m-3">Marketing</span>
-                        </div>
-                        <div class="p-4">
-                            <h4 class="fw-bold mb-2">Digital Marketing Expert</h4>
-                            <p class="text-muted small mb-3"><i class="far fa-clock me-1"></i> 3 Months • Growth</p>
-                            <p class="card-text text-muted">SEO, SEM, Social Media, and Content Marketing strategies.</p>
-                            <div class="d-flex justify-content-between align-items-center mt-4">
-                                <span class="fw-bold text-primary">Popular</span>
-                                <a href="contact.html" class="btn btn-sm btn-outline-dark rounded-pill">Enquire</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Course Card 6 -->
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card-custom p-0 h-100">
-                        <div class="bg-secondary position-relative" style="height: 200px; background: url('https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=600&auto=format&fit=crop') center/cover;">
-                            <span class="badge bg-dark position-absolute top-0 start-0 m-3">Design</span>
-                        </div>
-                        <div class="p-4">
-                            <h4 class="fw-bold mb-2">UI/UX Design</h4>
-                            <p class="text-muted small mb-3"><i class="far fa-clock me-1"></i> 4 Months • Creative</p>
-                            <p class="card-text text-muted">Design stunning interfaces and user experiences using Figma and Adobe XD.</p>
-                            <div class="d-flex justify-content-between align-items-center mt-4">
-                                <span class="fw-bold text-primary">New Batch</span>
-                                <a href="contact.html" class="btn btn-sm btn-outline-dark rounded-pill">Enquire</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+              </div>
             </div>
+          </div>
+
+          <!-- Course Card 2 -->
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="card-custom p-0 h-100">
+              <div
+                class="bg-secondary position-relative"
+                style="
+                  height: 200px;
+                  background: url(&quot;https://images.unsplash.com/photo-1593642532400-2682810df593?q=80&w=600&auto=format&fit=crop&quot;)
+                    center/cover;
+                "
+              >
+                <span
+                  class="badge bg-danger position-absolute top-0 start-0 m-3"
+                  >Web Dev</span
+                >
+              </div>
+              <div class="p-4">
+                <h4 class="fw-bold mb-2">MERN Stack Development</h4>
+                <p class="text-muted small mb-3">
+                  <i class="far fa-clock me-1"></i> 6 Months • Full Stack
+                </p>
+                <p class="card-text text-muted">
+                  Become a full-stack developer with React, Node.js, Express,
+                  and MongoDB.
+                </p>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-4"
+                >
+                  <span class="fw-bold text-primary">Admissions Open</span>
+                  <a
+                    href="contact.html"
+                    class="btn btn-sm btn-outline-dark rounded-pill"
+                    >Enquire</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Course Card 3 -->
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="card-custom p-0 h-100">
+              <div
+                class="bg-secondary position-relative"
+                style="
+                  height: 200px;
+                  background: url(&quot;https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=600&auto=format&fit=crop&quot;)
+                    center/cover;
+                "
+              >
+                <span class="badge bg-info position-absolute top-0 start-0 m-3"
+                  >Business</span
+                >
+              </div>
+              <div class="p-4">
+                <h4 class="fw-bold mb-2">Professional HR Training</h4>
+                <p class="text-muted small mb-3">
+                  <i class="far fa-clock me-1"></i> 3 Months • Practical
+                </p>
+                <p class="card-text text-muted">
+                  Master payroll, recruitment, compliance, and core HR
+                  operations.
+                </p>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-4"
+                >
+                  <span class="fw-bold text-primary">Trending</span>
+                  <a
+                    href="contact.html"
+                    class="btn btn-sm btn-outline-dark rounded-pill"
+                    >Enquire</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Course Card 4 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up">
+            <div class="card-custom p-0 h-100">
+              <div
+                class="bg-secondary position-relative"
+                style="
+                  height: 200px;
+                  background: url(&quot;https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=600&auto=format&fit=crop&quot;)
+                    center/cover;
+                "
+              >
+                <span
+                  class="badge bg-success position-absolute top-0 start-0 m-3"
+                  >Data</span
+                >
+              </div>
+              <div class="p-4">
+                <h4 class="fw-bold mb-2">Data Science & AI</h4>
+                <p class="text-muted small mb-3">
+                  <i class="far fa-clock me-1"></i> 8 Months • Advanced
+                </p>
+                <p class="card-text text-muted">
+                  Learn machine learning, deep learning, and data visualization
+                  tools.
+                </p>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-4"
+                >
+                  <span class="fw-bold text-primary">Limited Seats</span>
+                  <a
+                    href="contact.html"
+                    class="btn btn-sm btn-outline-dark rounded-pill"
+                    >Enquire</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Course Card 5 -->
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="card-custom p-0 h-100">
+              <div
+                class="bg-secondary position-relative"
+                style="
+                  height: 200px;
+                  background: url(&quot;https://images.unsplash.com/photo-1557838923-2985c318be48?q=80&w=600&auto=format&fit=crop&quot;)
+                    center/cover;
+                "
+              >
+                <span
+                  class="badge bg-warning text-dark position-absolute top-0 start-0 m-3"
+                  >Marketing</span
+                >
+              </div>
+              <div class="p-4">
+                <h4 class="fw-bold mb-2">Digital Marketing Expert</h4>
+                <p class="text-muted small mb-3">
+                  <i class="far fa-clock me-1"></i> 3 Months • Growth
+                </p>
+                <p class="card-text text-muted">
+                  SEO, SEM, Social Media, and Content Marketing strategies.
+                </p>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-4"
+                >
+                  <span class="fw-bold text-primary">Popular</span>
+                  <a
+                    href="contact.html"
+                    class="btn btn-sm btn-outline-dark rounded-pill"
+                    >Enquire</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Course Card 6 -->
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="card-custom p-0 h-100">
+              <div
+                class="bg-secondary position-relative"
+                style="
+                  height: 200px;
+                  background: url(&quot;https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=600&auto=format&fit=crop&quot;)
+                    center/cover;
+                "
+              >
+                <span class="badge bg-dark position-absolute top-0 start-0 m-3"
+                  >Design</span
+                >
+              </div>
+              <div class="p-4">
+                <h4 class="fw-bold mb-2">UI/UX Design</h4>
+                <p class="text-muted small mb-3">
+                  <i class="far fa-clock me-1"></i> 4 Months • Creative
+                </p>
+                <p class="card-text text-muted">
+                  Design stunning interfaces and user experiences using Figma
+                  and Adobe XD.
+                </p>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-4"
+                >
+                  <span class="fw-bold text-primary">New Batch</span>
+                  <a
+                    href="contact.html"
+                    class="btn btn-sm btn-outline-dark rounded-pill"
+                    >Enquire</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Footer (Same as Index) -->
     <!-- Footer -->
     <footer>
-        <div class="container pb-5">
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <h4 class="mb-4 text-white">
-                        <i class="fas fa-graduation-cap me-2"></i>Broadway HR
-                    </h4>
-                    <p class="text-white-50">
-                        Empowering careers through industry-relevant training and
-                        placement support. We bridge the gap between education and
-                        employment.
-                    </p>
-                    <div class="d-flex gap-3">
-                        <a href="#"><i class="fab fa-facebook fa-lg"></i></a>
-                        <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
-                        <a href="#"><i class="fab fa-linkedin fa-lg"></i></a>
-                        <a href="#"><i class="fab fa-youtube fa-lg"></i></a>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <h5 class="mb-3 text-white">Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="index.html">Home</a></li>
-                        <li class="mb-2"><a href="about.html">About Us</a></li>
-                        <li class="mb-2"><a href="courses.html">Courses</a></li>
-                        <li class="mb-2"><a href="services.html">Services</a></li>
-                        <li class="mb-2"><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <h5 class="mb-3 text-white">Courses</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="courses.html">Java Full Stack</a></li>
-                        <li class="mb-2"><a href="courses.html">Data Science</a></li>
-                        <li class="mb-2"><a href="courses.html">Digital Marketing</a></li>
-                        <li class="mb-2"><a href="courses.html">HR Generalist</a></li>
-                        <li class="mb-2"><a href="courses.html">Web Design</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <h5 class="mb-3 text-white">Contact Us</h5>
-                    <ul class="list-unstyled text-white-50">
-                        <li class="mb-2">
-                            <i class="fas fa-map-marker-alt me-2"></i> 123, Tech Plaza, IT
-                            Park, City
-                        </li>
-                        <li class="mb-2">
-                            <i class="fas fa-phone me-2"></i> +91 98765 43210
-                        </li>
-                        <li class="mb-2">
-                            <i class="fas fa-envelope me-2"></i> info@broadwayhr.com
-                        </li>
-                    </ul>
-                </div>
+      <div class="container pb-5">
+        <div class="row g-4">
+          <div class="col-md-3">
+            <h4 class="mb-4 text-white">
+              <i class="fas fa-graduation-cap me-2"></i>Broadway HR
+            </h4>
+            <p class="text-white-50">
+              Empowering careers through industry-relevant training and
+              placement support. We bridge the gap between education and
+              employment.
+            </p>
+            <div class="d-flex gap-3">
+              <a href="#" title="Facebook" rel="noopener"
+                ><i class="fab fa-facebook fa-lg"></i
+              ></a>
+              <a href="#" title="Instagram" rel="noopener"
+                ><i class="fab fa-instagram fa-lg"></i
+              ></a>
+              <a href="#" title="LinkedIn" rel="noopener"
+                ><i class="fab fa-linkedin fa-lg"></i
+              ></a>
+              <a href="#" title="YouTube" rel="noopener"
+                ><i class="fab fa-youtube fa-lg"></i
+              ></a>
             </div>
-            <div
-                class="border-top border-secondary mt-5 pt-4 text-center text-white-50"
-            >
-                <p>
-                    &copy; 2026 Broadway HR Computer Education. All Rights Reserved.
-                </p>
-            </div>
+          </div>
+          <div class="col-md-2">
+            <h5 class="mb-3 text-white">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="index.html">Home</a></li>
+              <li class="mb-2"><a href="about.html">About Us</a></li>
+              <li class="mb-2"><a href="courses.html">Courses</a></li>
+              <li class="mb-2"><a href="services.html">Services</a></li>
+              <li class="mb-2"><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h5 class="mb-3 text-white">Our Services</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="services.html">Incubator</a></li>
+              <li class="mb-2"><a href="services.html">Franchise</a></li>
+              <li class="mb-2"><a href="services.html">Workshops</a></li>
+              <li class="mb-2"><a href="services.html">Live Projects</a></li>
+              <li class="mb-2"><a href="services.html">Placement</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h5 class="mb-3 text-white">Top Courses</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="courses.html">Java Stack</a></li>
+              <li class="mb-2"><a href="courses.html">Data Science</a></li>
+              <li class="mb-2"><a href="courses.html">Digital Marketing</a></li>
+              <li class="mb-2"><a href="courses.html">HR Generalist</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5 class="mb-3 text-white">Contact Us</h5>
+            <ul class="list-unstyled text-white-50">
+              <li class="mb-2">
+                <i class="fas fa-map-marker-alt me-2"></i> 123, Tech Plaza, IT
+                Park, City
+              </li>
+              <li class="mb-2">
+                <i class="fas fa-phone me-2"></i> +91 98765 43210
+              </li>
+              <li class="mb-2">
+                <i class="fas fa-envelope me-2"></i> info@broadwayhr.com
+              </li>
+            </ul>
+          </div>
         </div>
+        <div
+          class="border-top border-secondary mt-5 pt-4 text-center text-white-50"
+        >
+          <p>
+            &copy; 2026 Broadway HR Computer Education. All Rights Reserved.
+          </p>
+        </div>
+      </div>
     </footer>
-    
-    <a href="https://wa.me/919876543210" class="whatsapp-float" target="_blank">
-        <i class="fab fa-whatsapp"></i>
+
+    <a
+      href="https://wa.me/919876543210"
+      class="whatsapp-float"
+      target="_blank"
+      title="WhatsApp Us"
+      rel="noopener"
+    >
+      <i class="fab fa-whatsapp"></i>
     </a>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>
