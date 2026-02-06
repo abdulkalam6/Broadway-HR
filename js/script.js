@@ -33,17 +33,30 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 
-    // Navbar scroll effect
-    const navbar = document.querySelector('.navbar');
-    window.addEventListener('scroll', function() {
-        if (window.scrollY > 50) {
-            navbar.classList.add('shadow-sm');
-            navbar.style.padding = '10px 0';
-        } else {
-            navbar.classList.remove('shadow-sm');
-            navbar.style.padding = '15px 0';
-        }
-    });
+  // Navbar scroll effect
+  const navbar = document.querySelector(".navbar");
+  function checkScroll() {
+    if (window.scrollY > 50) {
+      navbar.classList.add("scrolled");
+    } else {
+      navbar.classList.remove("scrolled");
+    }
+  }
+  window.addEventListener("scroll", checkScroll);
+  checkScroll(); // Initial check
+
+  // Active Link Handling
+  const currentPath = window.location.pathname.split("/").pop() || "index.html";
+  const navLinks = document.querySelectorAll(".nav-link");
+
+  navLinks.forEach((link) => {
+    const linkPath = link.getAttribute("href");
+    if (linkPath === currentPath) {
+      link.classList.add("active");
+    } else {
+      link.classList.remove("active");
+    }
+  });
 
     // --- Search Functionality ---
 
